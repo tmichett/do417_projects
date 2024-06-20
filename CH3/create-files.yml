@@ -1,0 +1,8 @@
+---
+- name: Demo Windows playbook writing
+  hosts: win1.example.com
+  tasks:
+    - name: Create a file on the desktop
+      ansible.windows.win_copy:
+        content: "This is a demo for the DO417 Course"
+        dest: C:\Users\devops\Desktop\DO417_Demo.txt
